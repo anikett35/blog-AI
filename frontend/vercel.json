@@ -4,7 +4,7 @@
   "outputDirectory": "build",
   "framework": "create-react-app",
   "env": {
-    "REACT_APP_API_URL": "https://blogy-engine-api.onrender.com"
+    "REACT_APP_API_URL": "https://blog-ai-b0aw.onrender.com"
   },
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

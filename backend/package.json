@@ -1,32 +1,22 @@
 {
-  "name": "blogy-engine-frontend",
+  "name": "blogy-engine-backend",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.0",
-    "react-scripts": "5.0.1",
-    "framer-motion": "^11.2.10",
-    "gsap": "^3.12.5",
-    "react-markdown": "^9.0.1",
-    "remark-gfm": "^4.0.0",
-    "lucide-react": "^0.383.0",
-    "react-hot-toast": "^2.4.1",
-    "axios": "^1.7.2"
-  },
+  "description": "Blogy AI Engine — Express backend with Groq API for AI-powered blog generation",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "eslintConfig": {
-    "extends": ["react-app"]
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "groq-sdk": "^0.5.0",
+    "helmet": "^7.1.0"
   },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
-  },
-  "proxy": "http://localhost:3001"
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
